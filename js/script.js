@@ -5,15 +5,15 @@ var terminal = {
     icon: null,
     container: null,
     status_bar: null,
-    _maximized: false,
+    _saved: false,
     _prevTop: null,
     _prevLeft: null,
     
     initialize: function() {
         $("#close").click(terminal.close);
-        // open thing
         $("#maximize").click(terminal.maximize);
         $("#minimize").click(terminal.minimize);
+        $(".icon").click(terminal.open);
         
         terminal.wnd = $(".terminal");
         terminal.icon = $(".icon");
@@ -22,15 +22,16 @@ var terminal = {
     },
     
     close: function() {
-        toggleDraggable.off();
+        alert("")
     },
     
     open: function() {
-        
+        terminal.wnd.removeClass("minimize");
+        terminal.icon.removeClass("show jump");
+        terminal._restorePosition();
     },
     
     maximize: function() {
-        terminal.wnd.removeClass("minimize");
         terminal.status_bar.toggleClass("collapsed");
         terminal.container.toggleClass("fullscreen");
         terminal.wnd.toggleClass("maximize");
@@ -39,24 +40,33 @@ var terminal = {
     },
     
     minimize: function() {
-        toggleDraggable.on();
         terminal.wnd.removeClass("maximize");
-        terminal.status_bar.removeClass("collapsed");
         terminal.container.removeClass("fullscreen");
-        terminal.wnd.toggleClass("minimize");
+        terminal.status_bar.removeClass("collapsed");
+        terminal.wnd.addClass("minimize");
+        terminal.icon.addClass("show jump");
+        terminal._savePosition();
     },
     
     _togglePosition: function() {
-        if (terminal._maximized) {
-            terminal.wnd.css("top", terminal._prevTop);
-            terminal.wnd.css("left", terminal._prevLeft);
-            terminal._maximized = false;
+        if (terminal._saved) {
+            terminal._restorePosition();
         } else {
-            terminal._prevTop = terminal.wnd.css("top");
-            terminal._prevLeft = terminal.wnd.css("left");
-            terminal.wnd.removeAttr("style");
-            terminal._maximized = true;
+            terminal._savePosition();
         }
+    },
+    
+    _savePosition: function() {
+        terminal._prevTop = terminal.wnd.css("top");
+        terminal._prevLeft = terminal.wnd.css("left");
+        terminal.wnd.removeAttr("style");
+        terminal._saved = true;
+    },
+    
+    _restorePosition: function() {
+        terminal.wnd.css("top", terminal._prevTop);
+        terminal.wnd.css("left", terminal._prevLeft);
+        terminal._saved = false;
     },
     
     keydown: function() {
