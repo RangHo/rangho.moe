@@ -1,125 +1,34 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ranghOS v1.6</title>
+        <meta charset="utf-8">
         
-        <!-- External CSS data -->
-        <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Varela+Round" rel="stylesheet">
-        <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
-        <!-- External JavaScript data -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-        
-        <script src="./js/script.js"></script>
         <link href="./css/landscape.css" media="(orientation: landscape)" rel="stylesheet">
-        <link href="./css/portrait.css" media="(orientation: portrait)" rel="stylesheet">
+        <link href="./css/protrait.css" media="(orientation: portrait)" rel="stylesheet">
     </head>
     <body>
-        <div class="landscape">
-            <div class="status-bar">
-                <span><i>ranghOS v1.6 ~MOE Edition~</i></span>
+        <main>
+            <div class="profile">
+                <figure class="profile-image">
+                    <img src="./img/ProfilePic.jpg" alt="Profile Image">
+                    <figcaption>Original artwork by <a href="https://www.pixiv.net/member.php?id=587063">んがょぺ</a></figcaption>
+                </figure>
+                <div class="text">
+                    <div class="name">RangHo Lee</div>
+                    <div class="description">Newbie Game Developer<br>(So called) C# Developer<br>Hibiki for my life <span class="red">♥</span><br><br>C / C# / Python / Unity</div>
+                </div>
             </div>
-            <main class="container">
-                <div class="terminal">
-                    <header id="draggable">
-                        <div class="buttons">
-                            <div id="close" class="btn btn-close"></div>
-                            <div id="minimize" class="btn btn-minimize"></div>
-                            <div id="maximize" class="btn btn-maximize"></div>
-                        </div>
-                    </header>
-                    <code class="content"><pre>                        _      ___  ____  
-  _ __ __ _ _ __   __ _| |__  / _ \/ ___| 
- | '__/ _` | '_ \ / _` | '_ \| | | \___ \ 
- | | | (_| | | | | (_| | | | | |_| |___) |
- |_|  \__,_|_| |_|\__, |_| |_|\___/|____/ 
-                  |___/                   </pre>Welcome to ranghOS!<br>(v0.1 build 1024-alpha)<br><br>Establishing connection with the mainframe...<br>Established connection with the mainframe device: /dev/brain0<br>[<span class="warn">WARN</span>] Connected mainframe did not pass the Standard Sanity Check process. Functional integrity cannot be guaranteed.<br> Do you wish to proceed? (Y/N): Y<br>[<span class="warn">WARN</span>] Cannot keep up! To many things are going on at the same time!<br><br>[<span class="username">visitor</span>@<span class="hostname">RangHo</span> <span class="directory">~</span>] $ help<br>ranghOS help page v1.6
-                        <div class="indented">
-                            <table class="help">
-                                <tr>
-                                    <td class="command"><a href="https://blog.rangho.moe">blog</a></td>
-                                    <td class="description">Redirects to Blog</td>
-                                </tr>
-                                <tr>
-                                    <td class="command"><a href="https://twitter.com/RangHo_220">twitter</a></td>
-                                    <td class="description">Redirects to Twitter profile</td>
-                                </tr>
-                                <tr>
-                                    <td class="command"><a href="https://github.com/RangHo">github</a></td>
-                                    <td class="description">Redirects to GitHub profile</td>
-                                </tr>
-                                <tr>
-                                    <td class="command"><a href="mailto:hibiki_love@rangho.moe">email</a></td>
-                                    <td class="description">Opens the email client and sends an email</td>
-                                </tr>
-                                <tr>
-                                    <td class="command"><a href="#">exit</a></td>
-                                    <td class="description">Closes ranghOS session</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </code>
-                </div>
-                <div class="icon">
-                    <img src="./img/App-Terminal-icon.png" ondragstart="return false;"></img>
-                    <span class="popup">ranghOS Terminal</span>
-                </div>
-                <div class="terminal-data">
-                    <data><pre>                        _      ___  ____  
-  _ __ __ _ _ __   __ _| |__  / _ \/ ___| 
- | '__/ _` | '_ \ / _` | '_ \| | | \___ \ 
- | | | (_| | | | | (_| | | | | |_| |___) |
- |_|  \__,_|_| |_|\__, |_| |_|\___/|____/ 
-                  |___/                   </pre></data>
-                    <data after="100" typing="fast">Welcome to ranghOS!<br>(v1.6 build 1024)<br><br></data>
-                    <data after="500">Establishing connection with the mainframe</data>
-                    <data after="500">.</data>
-                    <data after="500">.</data>
-                    <data after="10">.<br>Established connection with the mainframe device: /dev/brain0<br></data>
-                    <data after="500">[<span class="warn">WARN</span>] Connected mainframe did not pass the Standard Sanity Check process. Functional integrity cannot be guaranteed.<br> Do you wish to proceed? (Y/N):</data>
-                    <data after="200" typing="slow"> Y<br></data>
-                    <data after="100">[<span class="warn">WARN</span>] Cannot keep up! Too many things are going on at the same time!<br><br></data>
-                    <data after="200">Configuring system...<br></data>
-                    <data after="1200"><div class="indented">Using precompiled setting "website"...</div></data>
-                    <data after="100"><div class="indented">Complete!<br><br></div></data>
-                    <data after="0">Welcome, visitor!<br></data>
-                    <data after="500">[<span class="username">visitor</span>@<span class="hostname">RangHo</span> <span class="directory">~</span>] $ </data>
-                    <data after="100" typing="normal">help<br></data>
-                    <data after="100" id="help">
-                        ranghOS help page v1.6
-                        <div class="indented">
-                            <table class="help">
-                                <tr>
-                                    <td class="command"><a href="https://blog.rangho.moe">blog</a></td>
-                                    <td class="description">Redirects to Blog</td>
-                                </tr>
-                                <tr>
-                                    <td class="command"><a href="https://twitter.com/RangHo_220">twitter</a></td>
-                                    <td class="description">Redirects to Twitter profile</td>
-                                </tr>
-                                <tr>
-                                    <td class="command"><a href="https://github.com/RangHo">github</a></td>
-                                    <td class="description">Redirects to GitHub profile</td>
-                                </tr>
-                                <tr>
-                                    <td class="command"><a href="mailto:hibiki_love@rangho.moe">email</a></td>
-                                    <td class="description">Opens the email client and sends an email</td>
-                                </tr>
-                                <tr>
-                                    <td class="command"><a href="#">exit</a></td>
-                                    <td class="description">Closes ranghOS session</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </data>
-                    <data loop><br>[<span class="username">visitor</span>@<span class="hostname">RangHo</span> <span class="directory">~</span>] $ </data>
-                </div>
-            </main>
-        </div>
-        <div class="portrait">
-            <h1 style="color: white; text-align:center;">Mobile Website currently unavailable!</h1>
-        </div>
+            <div class="links">
+                <div class="link-btn blog"><a href="http://blog.rangho.moe"><i class="fa fa-book" aria-hidden="true"></i></a></div>
+                <div class="link-btn postype"><a href="http://postype.rangho.moe"><i class="fa fa-paragraph fa-flip-horizontal" aria-hidden="true"></i></a></div>
+                <div class="link-btn twitter"><a href="http://twitter.com/RangHo_220"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                <div class="link-btn github"><a href="http://github.com/RangHo"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+                <div class="link-btn email"><a href="mailto:hibiki_love@rangho.moe"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+            </div>
+        </main>
     </body>
 </html>
