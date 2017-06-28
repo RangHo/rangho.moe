@@ -142,14 +142,6 @@ main:before {
     left: -110%;
 }
 
-.link-btn.blog .fa {
-    color: #EA531F;
-}
-
-.link-btn.blog a:before {
-    background-color: #EA531F;
-}
-
 .link-btn.postype .fa {
     color: #6670DD;
 }
