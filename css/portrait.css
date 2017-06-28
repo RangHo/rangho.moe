@@ -112,12 +112,12 @@ main:before {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    font-size: 5vh;
+    font-size: 10vw;
     text-align: center;
-    height: 7.5vh;
-    width: 7.5vh;
+    height: 15vw;
+    width: 15vw;
     float: left;
-    border-radius: 0.5em;
+    border-radius: 0.25em;
     box-shadow: 0em 0.1em 0.25em rgba(0, 0, 0, 0.5);
     margin: auto;
 }
