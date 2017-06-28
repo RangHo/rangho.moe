@@ -112,10 +112,10 @@ main:before {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    font-size: 5vw;
+    font-size: 5vh;
     text-align: center;
-    height: 10vw;
-    width: 10vw;
+    height: 8vh;
+    width: 8vh;
     float: left;
     border-radius: 0.5em;
     box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.5);
