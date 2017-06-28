@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins|VT323');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Share+Tech+Mono');
 
 span.red {
     color: crimson;
@@ -79,7 +79,7 @@ main:before {
 
 .profile .description {
     font-size: 4vw;
-    font-family: "VT323", monospace;
+    font-family: "Share Tech Mono", monospace;
     text-align: left;
     padding-left: 4vw;
 }
@@ -88,10 +88,10 @@ main:before {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    width: 98vw;
-    height: 20vh;
-    top: 75vh;
-    left: 1vw;
+    width: 95vw;
+    height: 20vw;
+    top: 80vh;
+    left: 2.5vw;
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 4vw;
     box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.5);
@@ -114,11 +114,11 @@ main:before {
     flex-direction: column;
     font-size: 5vh;
     text-align: center;
-    height: 8vh;
-    width: 8vh;
+    height: 7.5vh;
+    width: 7.5vh;
     float: left;
     border-radius: 0.5em;
-    box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+    box-shadow: 0em 0.1em 0.25em rgba(0, 0, 0, 0.5);
     margin: auto;
 }
 
