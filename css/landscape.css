@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins|VT323');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Share+Tech+Mono');
 
 span.red {
     color: crimson;
@@ -82,7 +82,7 @@ main:before {
 
 .profile .description {
     font-size: 3vh;
-    font-family: "VT323", monospace;
+    font-family: "Share Tech Mono", monospace;
     text-align: left;
     padding-left: 1vh;
 }
